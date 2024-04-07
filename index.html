@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script>
+    <script>
+      dayjs.extend(window.dayjs_plugin_relativeTime)
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
+    <script>
+      dayjs.locale('pt-br')
+    </script>
+
+
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <header>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:krita="http://krita.org/namespaces/svg/krita" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" width="32" height="32" viewBox="0 0 736 736">
+          <defs></defs>
+          <rect id="shape0" fill="none" stroke="#0bc7b1" stroke-width="39.9999999999968" stroke-linecap="square" stroke-linejoin="bevel" width="735.999999999941" height="735.999999999941"></rect>
+          <rect id="shape1" transform="translate(20.9999999999983, 23.9999999999981)" fill="none" stroke="#c70b98" stroke-width="214.909999999983" stroke-linecap="square" stroke-linejoin="bevel" width="682.999999999945" height="688.999999999945"></rect>
+          <rect id="shape2" transform="translate(128.99999999999, 132.999999999989)" fill="none" stroke="#c70b98" stroke-width="214.909999999983" stroke-linecap="square" stroke-linejoin="bevel" width="407.999999999967" height="385.999999999969"></rect>
+          <rect id="shape3" transform="translate(367.999999999971, 367.999999999971)" fill="none" stroke="#c70b98" stroke-width="214.909999999983" stroke-linecap="square" stroke-linejoin="bevel" width="233.999999999981" height="223.999999999982"></rect>
+          <rect id="shape4" transform="translate(319.999999999974, 327.999999999974)" fill="none" stroke="#c70b98" stroke-width="214.909999999983" stroke-linecap="square" stroke-linejoin="bevel" width="129.99999999999" height="94.9999999999924"></rect>
+          <rect id="shape5" transform="translate(322.999999999974, 296.999999999976)" fill="none" stroke="#c70b98" stroke-width="214.909999999983" stroke-linecap="square" stroke-linejoin="bevel" width="123.99999999999" height="70.9999999999944"></rect>
+          <rect id="shape6" transform="translate(258.999999999979, 277.999999999978)" fill="none" stroke="#c70b98" stroke-width="214.909999999983" stroke-linecap="square" stroke-linejoin="bevel" width="91.9999999999926" height="41.9999999999966"></rect>
+          <rect id="shape7" transform="translate(8.99999999999928, 7.99999999999936)" fill="none" stroke="#0bc7b1" stroke-width="214.909999999983" stroke-linecap="square" stroke-linejoin="bevel" width="726.999999999942" height="713.999999999943"></rect>
+        </svg>
+      </header>
+
+      <form onsubmit="adicionarParticipante(event)">
+        <fieldset>
+          <legend>inscrição</legend>
+          <div>
+
+            <div class="input-wrapper">
+              <input type="text" placeholder="Nome Completo" name="nome" required="">
+            </div>
+
+            <div class="input-wrapper">
+              <input type="email" placeholder="Email" name="email" required="">
+            </div>
+
+            <button>
+              REALIZAR INSCRIÇÃO
+            </button>
+          </div>
+        </fieldset>
+      </form>
+
+      <section class="lista-participantes">
+        <h2>Participantes</h2>
+
+        <div>
+
+          <table width="100%">
+            <thead style="text-align: left">
+              <tr>
+                <th>Participante</th>
+                <th>Data de inscrição</th>
+                <th>Data do check-in</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <strong>
+          Diego Fernandes
+        </strong>
+                  <br>
+                  <small>
+                    diego@gmail.com
+                  </small>
+                </td>
+                <td>Há 3 dias</td>
+                <td>há 3 minutos</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </body>
+
+</html>
